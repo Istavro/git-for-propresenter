@@ -14,7 +14,7 @@ $ brew install git
 
 ### Configuring git
 
-#### (Run all of these commands in a 'git bash' terminal)
+#### (On Windows run all of these commands in a 'git bash' terminal where as on MacOS you can run them in a normal terminal instance)
 
 Add your email and name
 
@@ -39,7 +39,7 @@ git config --global init.defaultBranch main
 
 #### If you don't already have one, create a [github] (https://github.com) account.
 
-Using git bash run the following command to check if you have an ssh key
+Using the terminal run the following command to check if you have an ssh key
 ```
 ls ~/.ssh/id_ed25519.pub
 ```
