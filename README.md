@@ -14,7 +14,7 @@ $ brew install git
 
 ### Configuring git
 
-#### (On Windows run all of these commands in a 'git bash' terminal where as on MacOS you can run them in a normal terminal instance)
+#### On Windows run all of these commands in a 'git bash' terminal where as on MacOS you can run them in a normal terminal instance
 
 Add your email and name
 
@@ -37,7 +37,7 @@ git config --global init.defaultBranch main
 
 ### Connecting git to github
 
-#### If you don't already have one, create a [github] (https://github.com) account.
+#### If you don't already have one, create a [github](https://github.com) account.
 
 Using the terminal run the following command to check if you have an ssh key
 ```
@@ -51,7 +51,7 @@ Create an ssh-key (If you have an ssh key in skip this step)
 ssh-keygen -t ed25519 -C <youremail>
 ```
 
-##### Note the <youremail> is supposed to be removed and replaced with your email.
+##### Note the'<>' is supposed to be removed and replaced with your email.
 
 When it prompts you for a location to save the generated key, just push Enter.
 
@@ -63,6 +63,14 @@ cat ~/.ssh/id_ed25519.pub
 ```
 and copy the output
 
-#### Link your ssh-key to your github
+### Link your ssh-key to your github
 
 On Github, click on your profile picture then Settings > SSH and GPG keys then click 'New SSH key' Then paste the output you previously copied into the Key section and add a title (preferably something that lets you know what this key will be used for and/or which computer) Then click 'Add SSH key'
+
+## Using Git
+
+Before we implement git's workflow into our usual Pro Presenter workflow, we first have to learn how to use git, this is what this section aims to achieve.
+
+For now, we will use the current repository you are reading this on as a "learning" repository to give you a better idea of how to use git, later on you will learn how to apply the skills you learned in your Pro Presenter workflow.
+
+
