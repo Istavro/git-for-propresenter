@@ -162,3 +162,14 @@ git push origin -u your-branch-name
 
 replacing `your-branch-name` with the name of the branch you created earlier.
 
+## Sumbit your changes to be merged in.
+
+If you go to your repository on GitHub, you'll see a `Copmare & pull request` button. Click on that button.
+
+<img style="float: right;" src="./assets/compare-and-pull.png" alt="create a pull request" />
+
+Now leave a message about what you changed and pull request.
+
+<img style="float: right;" src="./assets/submit-pull-request.png" alt="submit pull request" />
+
+I will try to merge your changes as soon as possible so you can see your changes being displayed in this repository, You will get a notification email once the changes have been merged.
