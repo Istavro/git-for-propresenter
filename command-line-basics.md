@@ -142,7 +142,6 @@ nano file-name
 
 When opening nano, you will relise that there is a list of all the shortcuts you will need at the very bottom, while the symbols might look confusing, pretty much any shortcut starting with a '^' means `ctrl + letter-key` and any shortcut starting with a 'M-' means `alt + letter-key`.
 
-`^X` is `ctrl + X`
-`M-E` is `alt + E`
+`^X` is `ctrl + X` and `M-E` is `alt + E`
 
 When you are done editing a file, press `ctrl + x` and you should be asked if you want to save, if you press Y for yes then you will be prompted to write the file name where you want to write all the changes to, if you want to keep the same file name just press enter.
