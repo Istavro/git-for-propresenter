@@ -10,7 +10,7 @@ If you use a windows system, then you might have relised that windows doesn't co
 
 ### Using Windows Subsystem for Linux (WSL)
 
-WSL pretty much aims to emulate a linux enviornment inside of windows, you can learn more about this and how to get it working on the [official Microsoft WSL documentation](https://learn.microsoft.com/en-us/windows/wsl/install).
+WSL pretty much aims to simulate a linux enviornment inside of windows, you can learn more about this and how to get it working on the [official Microsoft WSL documentation](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 This method is most useful for those who want to get as close of an experience to a unix-like system without actually install one in a virtual machine or on bare metal.
 

@@ -177,3 +177,7 @@ Now leave a message about what you changed and pull request.
 <img style="float: right;" src="./assets/submit-pull-request.png" alt="submit pull request" />
 
 I will try to merge your changes as soon as possible so you can see your changes being displayed in this repository, You will get a notification email once the changes have been merged.
+
+# Using git and github alongside Pro Presenter
+
+#### Note: This section of the guide does not currently fully support MacOS 
