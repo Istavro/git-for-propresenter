@@ -74,3 +74,75 @@ Now type `pwd` again and run the following command:
 cd ..
 ```
 As usual run `pwd` to check your current directory and you might have relised that you have changed directory to the folder that comes before the directory you originally started at, for example using /home/username/coolfolder again, typing `cd ..` would lead us to changing our directory to /home/username.
+
+## Relative and Absolute paths
+
+TBD
+
+## Moving files/folders (mv)
+
+#### If you want to, you can just move, rename, delete, etc... your files through a graphical user interface, these following guides are here just incase you want to use the terminal to achieve these tasks.
+
+To move a file or a folder type the following command:
+```
+mv file-name path/to/new/directory
+```
+
+where 'file-name' is the name of the file or folder you want to move and 'path/to/new/directory' is where you want to move it to.
+
+### Rename a file using mv:
+
+To rename a file type:
+```
+mv file-name new-file-name
+```
+
+Here you are pretty much moving the contents of a file to a new file with a different name.
+
+## Print file content to the terminal (cat)
+
+To print a file's content to the terminal, simply type:
+```
+cat file-name
+```
+
+## Make files (touch)
+
+To create a file type the following in the terminl:
+```
+touch file-name
+```
+
+## Create a directory (mkdir)
+
+To create a directory Type the following command:
+```
+mkdir directory-name
+```
+
+Now what if you wanted to create a folder within the a folder but the parent folder doesn't exist? For example lets say you are located in /home/username and want to create a folder called 'cool-folder' inside your working directory but you also want to create a folder inside of that call 'cooler-folder' you can:
+```
+mkdir cool-folder
+```
+```
+mkdir cool-folder/cooler-folder
+```
+
+Or alternatively just use the `-p` option which checks if the directory you are creating's parent exists and if not it creates it:
+```
+mkdir -p cool-folder/cooler-folder
+```
+
+## Editing a text file (nano)
+
+To edit a text file in the terminal, type:
+```
+nano file-name
+```
+
+When opening nano, you will relise that there is a list of all the shortcuts you will need at the very bottom, while the symbols might look confusing, pretty much any shortcut starting with a '^' means `ctrl + letter-key` and any shortcut starting with a 'M-' means `alt + letter-key`.
+
+`^X` is `ctrl + X`
+`M-E` is `alt + E`
+
+When you are done editing a file, press `ctrl + x` and you should be asked if you want to save, if you press Y for yes then you will be prompted to write the file name where you want to write all the changes to, if you want to keep the same file name just press enter.
