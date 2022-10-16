@@ -2,6 +2,8 @@
 
 This project aims to simplify and guide the process of using git and github with Pro Presenter 7.
 
+If you want a quick cheat sheet with all the important commands, then checkout the ones by [github](https://education.github.com/git-cheat-sheet-education.pdf) and [ATLASSIAN](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet), they each have some differences so make sure to go over both to find exactly what you want, alternatively use the [manual pages](https://linux.die.net/man/) to better understand the arguments that you can parse into a command and when you should do it (Note: the man pages include documentation for many terminal tools other than git so you can use them for those tools aswell)
+
 # Setting up git
 
 #### If you don't have git on your machine, install it:
