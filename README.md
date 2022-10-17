@@ -180,4 +180,104 @@ I will try to merge your changes as soon as possible so you can see your changes
 
 # Using git and github alongside Pro Presenter
 
-#### Note: This section of the guide does not currently fully support MacOS 
+#### Note: This section of the guide is not currently well documented for MacOS.
+
+## Setting up
+
+To begin using git and github with Pro Presenter you first need to setup your own fork and branches.
+
+<img align="right" width="300" src="./assets/fork.png" alt="fork this repository">
+
+### Fork the main repo
+
+To begin you need to navigate to the main github repo that you will be working off of and make your own fork.
+
+<img align="right" width="300" src="./assets/clone.png" alt="clone your fork of this repository">
+
+### Clone the fork
+
+#### Fork the following steps make sure to that ProPresenter is closed or else you might have issues.
+
+Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click 'SSH' the copy to clipboard icon.
+
+Open the terminal and run:
+```
+git clone < url you just copied >
+```
+
+#### Make sure to replace the "< url you just copied >" with the url you copied earlier.
+
+Now open up the repository you just cloned into your Pro Prosenter configuration and library files.
+
+On windows this is located at `C:/Users/user-name/Documents/ProPresenter`
+
+#### Note: if you are using windows file explorer to copy the files over then you need to click on `view` Then make sure to tick the box that says `Show hidden items` before you copy the files, this is because you won't be copying the hidden .git folder if you don't have the option on.
+
+If you want to use a terminal to achieve this task then run:
+```
+cp path/to/repo/you/just/cloned/* c:/Users/user-name/Documents/ProPresenter
+```
+
+#### Make sure to keep the `/*` at the very end of the first path and that user-name is replaced with your username
+
+## Create a branch
+
+Navigate to the git repo that we setup in your ProPresenter files:
+```
+cd c:/Users/user-name/Documents/ProPresenter
+```
+
+Then create a branch using:
+```
+git switch -c branch-name
+```
+
+Make sure that the `branch-name` is replaced with a name that will be descriptive of what you are using it for, example 'sunda-presentation-prep'
+
+## Use ProPresenter
+
+Now is the perfect time for you to open up ProPresenter and make any changes/additions you want.
+
+### Important Notes: After the first time of finishing this guide, you won't need to do any of the above steps, simply startover from this point on.
+
+## Staging and commiting changes
+
+To stage all the changes, navigate to c:/Users/user-name/Documents/ProPresenter and open a terminal there or in a terminal window run the following command:
+```
+cd c:/Users/user-name/Documents/ProPresenter
+
+```
+Where user-name is replace with your current username.
+
+Now run:
+```
+git add .
+```
+To stage all the changes, at this point you can run `git status` to check all the staged changes but because of how ProPresenter works, most of the changes are going to be giberish file names.
+
+To commit your changes run:
+```
+git commit -m "Your commit message"
+```
+Again if you are unsure of how to write a good commit message, checkout [CBEAMS'](https://cbea.ms/git-commit/) on commit messages.
+
+## Pushing changes to GitHub
+
+To push your changes onto github type:
+```
+git push origin -u your-branch-name
+```
+If you are unsure what branch you are working off of, type `git branch` and the name of the branch you are working off of should be marked.
+
+## Submit changes to be merged through a pull request
+
+If you go to your repository on GitHub, you'll see a `Copmare & pull request` button. Click on that button.
+
+
+<img style="float: right;" src="./assets/compare-and-pull.png" alt="create a pull request" />
+
+Now leave a message about what you changed and pull request.
+
+<img style="float: right;" src="./assets/submit-pull-request.png" alt="submit pull request" />
+
+Now you need to wait for your branch to be merged by anyone who was the ability to do so.
