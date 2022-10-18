@@ -129,6 +129,13 @@ For example:
 ```
 git switch -c test-branch
 ```
+
+The `-c` option is used to create a new branch in this case, if you simply want to switch to a branch then simply omit `-c`.
+
+```
+git switch your-branch-name
+```
+
 ## Make necessary changes and commit those changes
 
 Now open `favourite-foods.md` file in a text editor (`nano` in this case), add your name and favourite food to it. Don't add it at the beginning of the file. 
@@ -188,15 +195,15 @@ To begin using git and github with Pro Presenter you first need to setup your ow
 
 <img align="right" width="300" src="./assets/fork.png" alt="fork this repository">
 
-### Fork the main repo
+## Fork the main repo
 
 To begin you need to navigate to the main github repo that you will be working off of and make your own fork.
 
 <img align="right" width="300" src="./assets/clone.png" alt="clone your fork of this repository">
 
-### Clone the fork
+## Clone the fork
 
-#### Fork the following steps make sure to that ProPresenter is closed or else you might have issues.
+#### For the following steps make sure to that ProPresenter is closed or else you might have issues.
 
 Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click 'SSH' the copy to clipboard icon.
 
@@ -234,6 +241,12 @@ git switch -c branch-name
 
 Make sure that the `branch-name` is replaced with a name that will be descriptive of what you are using it for, example 'sunda-presentation-prep'
 
+The `-c` option is used to create a new branch in this case, if you simply want to switch to a branch then simply omit `-c`.
+
+```
+git switch your-branch-name
+```
+
 ## Use ProPresenter
 
 Now is the perfect time for you to open up ProPresenter and make any changes/additions you want.
@@ -245,7 +258,6 @@ Now is the perfect time for you to open up ProPresenter and make any changes/add
 To stage all the changes, navigate to c:/Users/user-name/Documents/ProPresenter and open a terminal there or in a terminal window run the following command:
 ```
 cd c:/Users/user-name/Documents/ProPresenter
-
 ```
 Where user-name is replace with your current username.
 
