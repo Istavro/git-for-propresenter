@@ -293,3 +293,36 @@ Now leave a message about what you changed and pull request.
 <img style="float: right;" src="./assets/submit-pull-request.png" alt="submit pull request" />
 
 Now you need to wait for your branch to be merged by anyone who was the ability to do so.
+
+# Reverting changes
+
+#### Using the wrong command in here might cause you to erase some progress PROCCED WITH CAUTION!!
+
+Git being a version control system not only lets multiple people collaborate together perfectly without having issues, but it also allows us to roll back any changes incase we make mistakes.
+
+## git log
+
+`git log` is a utility to check all the changes commited to a repo, when running `git log` on any branch, it will show the changes that have been commited and merged to that branch, the output for `git log` should look similar to this:
+```
+commit 123456789123456789123456789a (branch name where this commit was made on)
+Author: author name and email
+Date: date and time
+
+	commit message
+```
+
+the `123456789123456789123456789a` in this example is what we call a commit hash, the commit hash is important as it is the way we refer to a commit when rolling back changes.
+
+## Using git checkout
+
+As the name states, git checkout is used to checkout changes made in the past. To use it simply type:
+```
+git checkout < commit-hash >
+```
+Make sure to remove the "< commit-hash >" and replace it with the commit hash that want to go back to.
+
+Now if you check any file that was changed after that commit, you would relise the files have been changed back to what it was on that exact commit, if you want to go back to the staging area, simply type:
+```
+git checkout main
+```
+And you should see yourself back in the current main branch.
