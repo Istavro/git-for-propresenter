@@ -247,6 +247,69 @@ The `-c` option is used to create a new branch in this case, if you simply want 
 git switch your-branch-name
 ```
 
+## Syncing your local repo with a remote repo
+
+To make sure you don't run into merge issues when making a pull request, make sure that your local repo is synced with the main remote repo.
+
+
+
+
+
+### Sync your fork
+
+Go to your fork of the ProPresenter files and click `sync fork` and then if Github detects changes you should be able to `update branch`, if the `update branch` button is grayed out then that means your fork is up to do. 
+
+<img align="right" width="300" src="./assets/sync-fork.png" alt="sync your fork">
+
+Next you will need to pull all the changes into your local fork, first change into the directory of your local propresenter files:
+```
+cd path/to/propresenter/files
+```
+
+then run:
+```
+git pull --rebase
+```
+
+#### Later on I will explain how to pull for branches other than the main local branch.
+
+If you get errors stating that your local repo is has uncommited changes, thats fine, run `git status` and try and check if any of the files changed are important, if you don't spot or remember making any important changes it is most likley because of ProPresenter always changing one line in some configuration files, these changes are not that important and can be discarded. There are two ways we can resolve these conflicts.
+
+### Method 1: reseting to the last commit.
+
+By resetting to the last commit you are removing any changes after the commit, THESE CHANGES CAN NOT BE RESTORED SO MAKE SURE TO DO THIS ONLY IF YOU ARE SURE THEY WERE NOT IMPORTANT!!
+
+Run:
+```
+git reset --hard
+```
+and you should find yourself back at the last commit, now you should be able to run `git pull` 
+
+
+### Method 2: Stashing the commits
+
+`git stash` pretty much hides all unstaged changes temporarly until you want to reapply them, simply run:
+```
+git stash
+```
+
+then run `git pull`, to reapply those changes run:
+```
+git stash pop
+```
+
+### Pulling for branches other than the main branch
+
+To pull for a branch you first need to switch to it:
+```
+git switch branch-name
+```
+
+then run:
+```
+git pull --rebase
+```
+
 ## Use ProPresenter
 
 Now is the perfect time for you to open up ProPresenter and make any changes/additions you want.
