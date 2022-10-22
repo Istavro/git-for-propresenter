@@ -199,9 +199,10 @@ To begin using git and github with Pro Presenter you first need to setup your ow
 
 To begin you need to navigate to the main github repo that you will be working off of and make your own fork.
 
-<img align="right" width="300" src="./assets/clone.png" alt="clone your fork of this repository">
 
 ## Clone the fork
+
+<img align="right" width="300" src="./assets/clone.png" alt="clone your fork of this repository">
 
 #### For the following steps make sure to that ProPresenter is closed or else you might have issues.
 
@@ -250,9 +251,6 @@ git switch your-branch-name
 ## Syncing your local repo with a remote repo
 
 To make sure you don't run into merge issues when making a pull request, make sure that your local repo is synced with the main remote repo.
-
-
-
 
 
 ### Sync your fork
