@@ -305,7 +305,7 @@ git switch branch-name
 
 then run:
 ```
-git pull --rebase
+git pull --rebase origin main
 ```
 
 ## Use ProPresenter
